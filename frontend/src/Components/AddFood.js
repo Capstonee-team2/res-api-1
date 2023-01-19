@@ -42,8 +42,10 @@ const AddFood = () => {
               <Form.Control
                 type="Number"
                 placeholder="Enter price"
+                autoFocus
                 onChange={(e) => setPrice(e.target.value)}
               />
+          
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicEmail">
               <Form.Label>recette</Form.Label>
@@ -54,7 +56,7 @@ const AddFood = () => {
               />
             </Form.Group>
             <Button variant="primary" onClick={handleSubmit}>
-              Submit
+              add food
             </Button>
           </Form>
         </Card.Body>

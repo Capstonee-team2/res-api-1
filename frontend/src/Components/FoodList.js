@@ -10,7 +10,7 @@ export default function FoodList() {
   }, [dispatch]);
   const foods = useSelector((state) => state.foods);
   return (
-    <div>
+    <div style={{display:"flex"}}>
       {foods.map((el) => (
         <FoodCard el={el} />
       ))}
